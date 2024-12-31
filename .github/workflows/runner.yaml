@@ -13,24 +13,23 @@ on:
         type: string
 
 jobs:
-  sanitize-instance:
-    name: Sanitize PMC Instance Data
+  prepare-instance:
+    name: Prepare PMC instance for automation testing
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3 
 
-    - name: Local Action Call
+    - name: Mask Sensitive Input
+      run : echo "::add-mask::${{ inputs.PMC_DB_CONNECTION_STRING }}"
+      shell: bash
+
+    - name: Sanitize PMC Instance Data
       uses: ./.github/actions/sanitize-pmc-instance
       with:
-        PMC_DB_CONNECTION_STRING: ${{ secrets.PMC_DB_CONNECTION_STRING }}
+        PMC_DB_CONNECTION_STRING: ${{ inputs.PMC_DB_CONNECTION_STRING }}
       if:  ${{ inputs.SANITIZE }}
 
-  onboard-instance:
-    name: Onboard PMC Instance for Automation Test Run
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    
-    - uses: ./.github/actions/onboard-pmc-automation
+    - name: Onboard PMC Instance for Automation Test Run
+      uses: ./.github/actions/onboard-pmc-automation
       with:
-        PMC_DB_CONNECTION_STRING: ${{ secrets.PMC_DB_CONNECTION_STRING }}
+        PMC_DB_CONNECTION_STRING: ${{ inputs.PMC_DB_CONNECTION_STRING }}

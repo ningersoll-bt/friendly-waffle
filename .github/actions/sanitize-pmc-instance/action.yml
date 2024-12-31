@@ -1,5 +1,5 @@
 name: "Sanitize PMC Instance Data"
-secrets:
+inputs:
   PMC_DB_CONNECTION_STRING:
     required: true
     type: string
@@ -8,5 +8,5 @@ runs:
   using: "composite" 
   steps:
     - name: Sanitize PMC Instance Database
-      run: Invoke-Sqlcmd -ConnectionString ${{ secrets.PMC_DB_CONNECTION_STRING }} -InputFile "${{ github.action_path }}/sanitize-pmc-instance.sql"
+      run: Invoke-Sqlcmd -ConnectionString ${{ inputs.PMC_DB_CONNECTION_STRING }} -InputFile "${{ github.action_path }}/sanitize-pmc-instance.sql"
       shell: pwsh
