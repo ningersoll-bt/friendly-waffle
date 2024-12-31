@@ -2,6 +2,12 @@ name: 'Runner'
 on:
   workflow_dispatch:
     inputs:
+      SANITIZE:
+        description: "Should sanitize PMC instance?"
+        required: true
+        type: boolean
+        default: false
+    secrets:
       PMC_DB_CONNECTION_STRING:
         description: "PMC DB Connection String"
         required: true
@@ -9,14 +15,21 @@ on:
 
 jobs:
   sanitize-instance:
-    uses: ./.github/actions/sanitize-pmc-instance
-    with:
-      dnsName: ${{ inputs.dnsName }}
-      subscriptionId: ${{ secrets.subscriptionId }}
-    if:  ${{ inputs.sanitize }}
+    name: Sanitize PMC Instance Data
+    steps:
+    - uses: actions/checkout@v3 
+
+    - name: Local Action Call
+      uses: ./.github/actions/sanitize-pmc-instance
+      with:
+        PMC_DB_CONNECTION_STRING: ${{ secrets.PMC_DB_CONNECTION_STRING }}
+      if:  ${{ inputs.SANITIZE }}
 
   onboard-instance:
-    uses: ./.github/actions/onboard-pmc-automation
-    with:
-      dnsName: ${{ inputs.dnsName }}
-      subscriptionId: ${{ secrets.subscriptionId }}
+    name: Onboard PMC Instance for Automation Test Run
+    steps:
+    - uses: actions/checkout@v3
+    
+    - uses: ./.github/actions/onboard-pmc-automation
+      with:
+        PMC_DB_CONNECTION_STRING: ${{ secrets.PMC_DB_CONNECTION_STRING }}
