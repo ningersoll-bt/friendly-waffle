@@ -21,9 +21,9 @@ jobs:
 
     - name: Mask Sensitive Input
       run: |
-        $connString = "${{ inputs.PMC_DB_CONNECTION_STRING }}"
-        Write-Output "::add-mask::$connString"
-      shell: pwsh
+        CONN_STRING=$(jq -r '.inputs.PMC_DB_CONNECTION_STRING' $GITHUB_EVENT_PATH)
+        Write-Output "::add-mask::$CONN_STRING"
+      shell: bash
 
     - name: Sanitize PMC Instance Data
       uses: ./.github/actions/sanitize-pmc-instance
