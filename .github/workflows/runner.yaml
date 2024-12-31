@@ -1,0 +1,22 @@
+name: 'Runner'
+on:
+  workflow_dispatch:
+    inputs:
+      PMC_DB_CONNECTION_STRING:
+        description: "PMC DB Connection String"
+        required: true
+        type: string
+
+jobs:
+  sanitize-instance:
+    uses: ./.github/actions/sanitize-pmc-instance
+    with:
+      dnsName: ${{ inputs.dnsName }}
+      subscriptionId: ${{ secrets.subscriptionId }}
+    if:  ${{ inputs.sanitize }}
+
+  onboard-instance:
+    uses: ./.github/actions/onboard-pmc-automation
+    with:
+      dnsName: ${{ inputs.dnsName }}
+      subscriptionId: ${{ secrets.subscriptionId }}
