@@ -7,7 +7,6 @@ on:
         required: true
         type: boolean
         default: false
-    secrets:
       PMC_DB_CONNECTION_STRING:
         description: "PMC DB Connection String"
         required: true
