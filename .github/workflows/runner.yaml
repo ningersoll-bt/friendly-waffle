@@ -1,23 +1,63 @@
-name: 'Runner'
+name: 'Manual Run - Run Backend tests'
 on:
   workflow_dispatch:
     inputs:
-      SANITIZE:
-        description: "Should sanitize PMC instance?"
-        required: true
-        type: boolean
-        default: false
-      PMC_DB_CONNECTION_STRING:
-        description: "PMC DB Connection String"
+      dnsName:
+        description: "DNS Hostname"
         required: true
         type: string
+      sanitize-pmc-instance:
+        description: "Sanitize PMC instance data?"
+        required: false
+        type: boolean
+        default: false
+env:
+  SQL_SERVER_FQDN: "sqlserver-f576113f-centralus.database.windows.net"
+  AZURE_REGION_NAME: "centralus"
 
 jobs:
   prepare-instance:
     name: Prepare PMC instance for automation testing
     runs-on: windows-2022
+    environment: 'Automation'
     steps:
-    - uses: actions/checkout@v3 
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: 'Az CLI login'
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION }}
+    
+    - task: AzureCLI@2
+      name: RegionalAdminUserInfo
+      displayName: Get regional sql server information
+      inputs:
+        azureSubscription: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        scriptType: 'pscore'
+        failOnStandardError: true
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          $keyVaultName = $(az keyvault list -g "${{ env.RegionName }}-epm-sql-rg" --query '[].{Name:name}' -o tsv --only-show-errors)
+          $regionalAdminUser = $(az keyvault secret show --vault-name "$keyVaultName" --only-show-errors --name "regional-sqlserver-admin" | ConvertFrom-Json).value
+          $regionalAdminPassword = $(az keyvault secret show --vault-name "$keyVaultName" --only-show-errors --name "regional-sqlserver-admin-password" | ConvertFrom-Json).value
+          Write-Host "##vso[task.setvariable variable=RegionalAdminUser;isOutput=true]$regionalAdminUser"
+          Write-Host "##vso[task.setvariable variable=RegionalAdminPassword;isOutput=true;issecret=true]$regionalAdminPassword"
+
+    # - name: Add SQL Server Firewall Rule
+    #   run: |
+    #       $fwRuleName = "PrepareAutomation_${{ inputs.dnsName }}_$(Get-Date -Format "yyyyMMddHHmmss")"
+    #       Import-Module ${{ github.workspace }}/.github/scripts/SqlManagement.psm1
+    #       Write-Host "Attempting to add firewall rule $fwRuleName to server ${{ env.SQL_SERVER_FQDN }}"
+    #       $success = Add-FirewallRule "${{ env.SQL_SERVER_FQDN }}" "master" "${{ steps.RegionalAdminUserInfo.outputs.RegionalAdminUser }}" "${{ steps.RegionalAdminUserInfo.outputs.RegionalAdminPassword }}" "$fwRuleName" "${{ inputs.AzureRegion }}-epm-sql-rg" 20
+    #       if ($success -eq $true) {
+    #           exit 0
+    #       } else {
+    #           exit 1
+    #       }
+    #   shell: pwsh
 
     - name: Mask Sensitive Input
       run: |
@@ -25,13 +65,27 @@ jobs:
         echo "::add-mask::$CONN_STRING"
       shell: bash
 
-    - name: Sanitize PMC Instance Data
-      uses: ./.github/actions/sanitize-pmc-instance
-      with:
-        PMC_DB_CONNECTION_STRING: ${{ inputs.PMC_DB_CONNECTION_STRING }}
-      if:  ${{ inputs.SANITIZE }}
+    # - name: Sanitize PMC Instance Data
+    #   uses: ./.github/actions/sanitize-pmc-instance
+    #   with:
+    #     PMC_DB_CONNECTION_STRING: ${{ inputs.PMC_DB_CONNECTION_STRING }}
+    #   if:  ${{ inputs.SANITIZE }}
 
-    - name: Onboard PMC Instance for Automation Test Run
-      uses: ./.github/actions/onboard-pmc-automation
-      with:
-        PMC_DB_CONNECTION_STRING: ${{ inputs.PMC_DB_CONNECTION_STRING }}
+    # - name: Onboard PMC Instance for Automation Test Run
+    #   uses: ./.github/actions/prepare-automation-instance
+    #   with:
+    #     PMC_DB_CONNECTION_STRING: ${{ inputs.PMC_DB_CONNECTION_STRING }}
+
+  # run-backend-tests:
+  #   uses: ./.github/workflows/run-backend-test.yaml
+  #   with:
+  #     dnsName: ${{ inputs.dnsName }}
+  #     apiClientId: ${{ inputs.apiClientId }}
+  #     testExecutionId: ${{ inputs.testExecutionId }}
+  #     buildtag: ${{ inputs.buildtag }}
+  #     usedev: ${{ inputs.usedev }}
+  #   secrets:
+  #     API_CLIENT_SECRET: ${{ inputs.apiClientSecret }}
+  #     ARTIFACTORY_DEPLOYER: ${{ secrets.ARTIFACTORY_DEPLOYER }}
+  #     XRAY_CLIENT_ID:  ${{ secrets.XRAY_CLIENT_ID }}
+  #     XRAY_CLIENT_SECRET: ${{ secrets.XRAY_CLIENT_SECRET }}
