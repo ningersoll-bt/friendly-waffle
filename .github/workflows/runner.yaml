@@ -34,7 +34,7 @@ jobs:
     - name: Get regional sql server information
       id: RegionalAdminUserInfo
       run: |
-          az login --service-principal --username ${{ secret.SP_APP_ID }} --password ${{ secrets.SP_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+          az login --service-principal --username ${{ secrets.SP_APP_ID }} --password ${{ secrets.SP_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
           $keyVaultName = $(az keyvault list -g "${{ env.RegionName }}-epm-sql-rg" --query '[].{Name:name}' -o tsv --only-show-errors)
           $regionalAdminUser = $(az keyvault secret show --vault-name "$keyVaultName" --only-show-errors --name "regional-sqlserver-admin" | ConvertFrom-Json).value
           $regionalAdminPassword = $(az keyvault secret show --vault-name "$keyVaultName" --only-show-errors --name "regional-sqlserver-admin-password" | ConvertFrom-Json).value
