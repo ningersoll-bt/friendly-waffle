@@ -16,7 +16,7 @@ jobs:
       if: ${{ !cancelled() }}
       with:
         name: Backend E2E Tests
-        path: ${{ github.workspace }}/.github/results.xml
+        path: ${{ github.workspace }}\.github\workflows\results.xml
         reporter: jest-junit
         use-actions-summary: true 
         only-summary: false
