@@ -1,0 +1,2537 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2025-10-15T17:24:21" tests="0" file="active-directory-settings.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Active Directory Settings Microsoft EntraID" timestamp="2025-10-15T17:24:41" tests="1" time="4.996" failures="0">
+  
+  <testcase name="Active Directory Settings Microsoft EntraID Cannot Save Without Settings Value" time="24.579" classname="Cannot Save Without Settings Value">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-16656"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:24:49" tests="0" file="adapter-installation.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Page layout validation" timestamp="2025-10-15T17:25:07" tests="1" time="5.150" failures="0">
+  
+  <testcase name="Page layout validation Verify banner advertising Package Manager availability" time="23.054" classname="Verify banner advertising Package Manager availability">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21094"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Adapter Installation Activity Audit" timestamp="2025-10-15T17:25:13" tests="3" time="25.585" failures="0">
+  
+  <testcase name="Adapter Installation Activity Audit Verify 32 bit installer download log in auditlog" time="8.471" classname="Verify 32 bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14639"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Adapter Installation Activity Audit Verify 64 bit installer download log in auditlog" time="7.746" classname="Verify 64 bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14641"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Adapter Installation Activity Audit Verify ARM bit installer download log in auditlog" time="8.740" classname="Verify ARM bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-42151"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:34:35" tests="0" file="adapter-version-summary.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Windows adapter version summary" timestamp="2025-10-15T17:34:53" tests="2" time="16.860" failures="0">
+  
+  <testcase name="Windows adapter version summary Displays the correct adapter version count" time="29.346" classname="Displays the correct adapter version count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8850"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Windows adapter version summary Displays the correct total computers" time="5.654" classname="Displays the correct total computers">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8858"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="macOS adapter version summary" timestamp="2025-10-15T17:35:10" tests="2" time="12.631" failures="0">
+  
+  <testcase name="macOS adapter version summary Displays the correct adapter version count" time="8.916" classname="Displays the correct adapter version count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8852"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="macOS adapter version summary Displays the correct total computers" time="3.574" classname="Displays the correct total computers">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8860"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:35:29" tests="0" file="client-version-summary.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Windows Client Version Summary" timestamp="2025-10-15T17:35:47" tests="2" time="15.461" failures="0">
+  
+  <testcase name="Windows Client Version Summary Displays the correct Windows version count" time="29.681" classname="Displays the correct Windows version count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8854"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Windows Client Version Summary Displays the correct total computers" time="3.589" classname="Displays the correct total computers">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8862"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="macOS Client Version Summary" timestamp="2025-10-15T17:36:02" tests="2" time="9.931" failures="0">
+  
+  <testcase name="macOS Client Version Summary Displays the correct client version count" time="6.773" classname="Displays the correct client version count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8856"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="macOS Client Version Summary Displays the correct total computers" time="3.032" classname="Displays the correct total computers">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-8864"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:18:28" tests="0" file="computer-archive.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Archive one computer" timestamp="2025-10-15T17:18:46" tests="3" time="28.827" failures="0">
+  
+  <testcase name="Archive one computer Computer can be archived" time="36.950" classname="Computer can be archived">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23577"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Archive one computer The computer is not in the default grid filter" time="4.193" classname="The computer is not in the default grid filter">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23578"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Archive one computer The computer is marked archived when the filter is cleared" time="5.503" classname="The computer is marked archived when the filter is cleared">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23580"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Archive multiple computers" timestamp="2025-10-15T17:19:15" tests="3" time="37.162" failures="0">
+  
+  <testcase name="Archive multiple computers Multiple computers can be archived" time="24.611" classname="Multiple computers can be archived">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-6595"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Archive multiple computers Archived computers are not in the grid" time="4.897" classname="Archived computers are not in the grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14305"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Archive multiple computers Computers are marked archived when the filter is cleared" time="6.878" classname="Computers are marked archived when the filter is cleared">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23567"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:19:58" tests="0" file="computer-change-group.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Edit one computer&apos;s group assignment" timestamp="2025-10-15T17:20:21" tests="2" time="21.175" failures="0">
+  
+  <testcase name="Edit one computer&apos;s group assignment Computer can be moved" time="39.126" classname="Computer can be moved">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23572"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Edit one computer&apos;s group assignment The computer shows the new group" time="4.691" classname="The computer shows the new group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23573"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Edit multiple computers&apos; group assignment" timestamp="2025-10-15T17:20:42" tests="3" time="37.238" failures="0">
+  
+  <testcase name="Edit multiple computers&apos; group assignment Computers can be re-assigned" time="25.561" classname="Computers can be re-assigned">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23574"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Edit multiple computers&apos; group assignment The computers display the new group" time="5.293" classname="The computers display the new group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23575"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Edit multiple computers&apos; group assignment Computers not re-assigned maintain their group assignments" time="5.556" classname="Computers not re-assigned maintain their group assignments">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14308"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:21:26" tests="0" file="computer-deactivate.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="deactivate one computer" timestamp="2025-10-15T17:21:44" tests="2" time="20.178" failures="0">
+  
+  <testcase name="deactivate one computer computer can be deleted" time="34.136" classname="computer can be deleted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12315"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="deactivate one computer computer is not in the default grid filter" time="4.051" classname="computer is not in the default grid filter">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14310"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="deactivate multiple computers" timestamp="2025-10-15T17:22:04" tests="2" time="26.187" failures="0">
+  
+  <testcase name="deactivate multiple computers multiple computers can be deleted" time="22.559" classname="multiple computers can be deleted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-6596"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="deactivate multiple computers deleted computers are not in the grid" time="3.288" classname="deleted computers are not in the grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14311"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:22:37" tests="0" file="computer-grid.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="View Computer" timestamp="2025-10-15T17:22:55" tests="3" time="23.444" failures="0">
+  
+  <testcase name="View Computer Created computer is in the grid" time="30.870" classname="Created computer is in the grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24126"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="View Computer Created computer&apos;s details are correct" time="5.303" classname="Created computer&apos;s details are correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24125"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="View Computer Created computer&apos;s policy details are correct" time="4.944" classname="Created computer&apos;s policy details are correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24124"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Computer Grid Colums" timestamp="2025-10-15T17:23:19" tests="4" time="23.151" failures="0">
+  
+  <testcase name="Computer Grid Colums Display all columns in grid" time="6.587" classname="Display all columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26899"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Grid Colums Display selected columns in grid" time="5.136" classname="Display selected columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12248"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Grid Colums Deselect all columns in grid" time="5.800" classname="Deselect all columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26900"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Grid Colums Hide deselected columns in grid" time="5.111" classname="Hide deselected columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12249"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:23:48" tests="0" file="computer-policy.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Computer Grid Policy" timestamp="2025-10-15T17:24:07" tests="1" time="11.603" failures="0">
+  
+  <testcase name="Computer Grid Policy Applied and assigned policy in computer grid should match" time="29.781" classname="Applied and assigned policy in computer grid should match">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23189"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:36:19" tests="0" file="computer-summary.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Computer Counts No Duplicates" timestamp="2025-10-15T17:36:38" tests="3" time="15.082" failures="0">
+  
+  <testcase name="Computer Counts No Duplicates Display the correct Total Computers count" time="27.227" classname="Display the correct Total Computers count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22693"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Counts No Duplicates Display the correct Connected Computers count" time="3.082" classname="Display the correct Connected Computers count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22695"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Counts No Duplicates Display the correct Archived Computers count" time="2.918" classname="Display the correct Archived Computers count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22698"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Computer Counts Duplicate Computers" timestamp="2025-10-15T17:36:53" tests="3" time="15.886" failures="0">
+  
+  <testcase name="Computer Counts Duplicate Computers Display the correct Total Computers count" time="9.036" classname="Display the correct Total Computers count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22694"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Counts Duplicate Computers Display the correct Connected Computers count" time="3.486" classname="Display the correct Connected Computers count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22696"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Counts Duplicate Computers Display the correct Archived Computers count" time="3.022" classname="Display the correct Archived Computers count">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22699"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="View Computers from summary" timestamp="2025-10-15T17:37:09" tests="2" time="13.211" failures="0">
+  
+  <testcase name="View Computers from summary Displays the correct computers when clicking &quot;Connected Computers&quot;" time="8.334" classname="Displays the correct computers when clicking &quot;Connected Computers&quot;">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-1126"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="View Computers from summary Displays the correct computers when clicking &quot;Archived Computers&quot;" time="4.424" classname="Displays the correct computers when clicking &quot;Archived Computers&quot;">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-6111"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:25:42" tests="0" file="create-api-account.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Create API Account" timestamp="2025-10-15T17:26:00" tests="3" time="21.622" failures="0">
+  
+  <testcase name="Create API Account Can create account" time="33.175" classname="Can create account">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-1751"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Create API Account API Acccount is usable" time="2.430" classname="API Acccount is usable">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-1283"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Create API Account API Account displayed corectly" time="3.520" classname="API Account displayed corectly">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-13004"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:11:41" tests="0" file="create-group.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Creation" timestamp="2025-10-15T17:11:59" tests="2" time="16.233" failures="0">
+  
+  <testcase name="Group Creation Create Group" time="29.480" classname="Create Group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-9519"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Group Creation Group details can be viewed and is correct" time="4.359" classname="Group details can be viewed and is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12324"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:12:19" tests="0" file="delete-group.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Standard group deletion" timestamp="2025-10-15T17:12:37" tests="1" time="7.917" failures="0">
+  
+  <testcase name="Standard group deletion can delete pre-existing non-default group" time="25.884" classname="can delete pre-existing non-default group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-9521"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Default group deletion" timestamp="2025-10-15T17:12:45" tests="1" time="4.328" failures="0">
+  
+  <testcase name="Default group deletion cannot delete pre-existing default group" time="4.181" classname="cannot delete pre-existing default group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21883"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:26:25" tests="0" file="domain.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Domain Configuration" timestamp="2025-10-15T17:26:44" tests="3" time="22.726" failures="0">
+  
+  <testcase name="Domain Configuration A domain can be created and used for user creation" time="26.466" classname="A domain can be created and used for user creation">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-37539"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Domain Configuration Cannot add invalid formatted domain" time="6.657" classname="Cannot add invalid formatted domain">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11559"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Domain Configuration Activity audit is generated" time="8.206" classname="Activity audit is generated">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12156"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:12:53" tests="0" file="download-group-data.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Data Export" timestamp="2025-10-15T17:13:11" tests="1" time="7.135" failures="0">
+  
+  <testcase name="Group Data Export can download group data as CSV file" time="24.847" classname="can download group data as CSV file">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22081"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:27:10" tests="0" file="edit-api-account.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Edit API Account" timestamp="2025-10-15T17:27:29" tests="3" time="12.755" failures="0">
+  
+  <testcase name="Edit API Account Can edit account" time="31.301" classname="Can edit account">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-32778"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Delete API Account" timestamp="2025-10-15T17:27:42" tests="1" time="6.211" failures="0">
+  
+  <testcase name="Delete API Account Can delete account" time="6.139" classname="Can delete account">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-32778"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:13:21" tests="0" file="edit-group.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Editing" timestamp="2025-10-15T17:13:39" tests="2" time="18.854" failures="0">
+  
+  <testcase name="Group Editing can edit group title" time="29.426" classname="can edit group title">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21885"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Group Editing can edit group description" time="7.004" classname="can edit group description">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21886"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Setting the Default Group" timestamp="2025-10-15T17:13:58" tests="1" time="6.647" failures="0">
+  
+  <testcase name="Setting the Default Group can set new default group" time="6.527" classname="can set new default group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21888"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:14:08" tests="0" file="group-activity.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Activity" timestamp="2025-10-15T17:14:27" tests="1" time="9.867" failures="0">
+  
+  <testcase name="Group Activity can view group activity grid details" time="27.829" classname="can view group activity grid details">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21971"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:14:40" tests="0" file="group-grid.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Computer Group Grid Colums" timestamp="2025-10-15T17:14:58" tests="4" time="22.114" failures="0">
+  
+  <testcase name="Computer Group Grid Colums Display all columns in grid" time="24.735" classname="Display all columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28429"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Group Grid Colums Display selected columns in grid" time="5.110" classname="Display selected columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28426"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Group Grid Colums Deselect all columns in grid" time="5.170" classname="Deselect all columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28431"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Group Grid Colums Hide deselected columns in grid" time="4.743" classname="Hide deselected columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28432"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:15:24" tests="0" file="group-policy-assignment.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Policy Assignment" timestamp="2025-10-15T17:15:42" tests="1" time="17.820" failures="0">
+  
+  <testcase name="Group Policy Assignment Policy can be assigned" time="36.108" classname="Policy can be assigned">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11566"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Group Policy Assignment for Multiple Group" timestamp="2025-10-15T17:16:00" tests="1" time="12.659" failures="0">
+  
+  <testcase name="Group Policy Assignment for Multiple Group Policy can be assigned to multiple group" time="12.484" classname="Policy can be assigned to multiple group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23649"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Change assigned policy" timestamp="2025-10-15T17:16:13" tests="1" time="13.394" failures="0">
+  
+  <testcase name="Change assigned policy Can re-assign assigned policy" time="13.308" classname="Can re-assign assigned policy">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11364"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Change assigned policy for Multiple Group" timestamp="2025-10-15T17:16:26" tests="1" time="12.895" failures="0">
+  
+  <testcase name="Change assigned policy for Multiple Group Can re-assign assigned policy" time="12.699" classname="Can re-assign assigned policy">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25890"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:16:43" tests="0" file="group-roles.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Roles" timestamp="2025-10-15T17:17:01" tests="1" time="8.442" failures="0">
+  
+  <testcase name="Group Roles roles assigned group permissions appear in the group&apos;s roles grid" time="26.046" classname="roles assigned group permissions appear in the group&apos;s roles grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24437"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:17:13" tests="0" file="group-users.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Users" timestamp="2025-10-15T17:17:31" tests="1" time="12.914" failures="0">
+  
+  <testcase name="Group Users test user can be assigned view permissions for group" time="30.922" classname="test user can be assigned view permissions for group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26812"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:37:28" tests="0" file="jit-admin-access-request.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="JIT Request Details" timestamp="2025-10-15T17:37:47" tests="4" time="47.196" failures="0">
+  
+  <testcase name="JIT Request Details Verify summary details" time="30.881" classname="Verify summary details">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28834"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Request Details Deny the request" time="11.130" classname="Deny the request">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28839"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Request Details Approve the Request" time="10.856" classname="Approve the Request">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28838"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Request Details Cancel the request" time="12.021" classname="Cancel the request">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25183"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:27:54" tests="0" file="jit-admin.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="JIT Admin Enabled" timestamp="2025-10-15T17:28:12" tests="3" time="30.415" failures="0">
+  
+  <testcase name="JIT Admin Enabled Default view of jit admin setting" time="25.707" classname="Default view of jit admin setting">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26639"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Admin Enabled Can send JIT admin request after enabling" time="16.862" classname="Can send JIT admin request after enabling">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-39382"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Admin Enabled Discard disabling JIT Admin" time="5.651" classname="Discard disabling JIT Admin">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26820"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT Admin Disabled" timestamp="2025-10-15T17:28:43" tests="2" time="10.435" failures="0">
+  
+  <testcase name="JIT Admin Disabled Cannot create JIT admin request when JIT admin setting is disabled" time="5.451" classname="Cannot create JIT admin request when JIT admin setting is disabled">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-39383"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Admin Disabled Discard enabling JIT Admin" time="4.855" classname="Discard enabling JIT Admin">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-30488"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:38:41" tests="0" file="jit-application-access-requests.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="JIT Application Access Request Details" timestamp="2025-10-15T17:39:00" tests="2" time="14.955" failures="0">
+  
+  <testcase name="JIT Application Access Request Details Request displayed correctly in the grid" time="26.932" classname="Request displayed correctly in the grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22952"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Application Access Request Details Request details are correct" time="6.340" classname="Request details are correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22944"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT Application Access Request Actions" timestamp="2025-10-15T17:39:15" tests="2" time="26.608" failures="0">
+  
+  <testcase name="JIT Application Access Request Actions Deny the request" time="13.112" classname="Deny the request">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-22958"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Application Access Request Actions Request can be approved" time="13.212" classname="Request can be approved">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28838"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT Application Access Approved Activity Auditlog" timestamp="2025-10-15T17:39:41" tests="2" time="14.808" failures="0">
+  
+  <testcase name="JIT Application Access Approved Activity Auditlog Approved request is audited" time="7.248" classname="Approved request is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34457"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Application Access Approved Activity Auditlog Approved request note audited" time="7.237" classname="Approved request note audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34463"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT Application Access Denied Activity Auditlog" timestamp="2025-10-15T17:39:56" tests="2" time="14.017" failures="0">
+  
+  <testcase name="JIT Application Access Denied Activity Auditlog Denied request is audited" time="6.417" classname="Denied request is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34462"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="JIT Application Access Denied Activity Auditlog Denied request note audited" time="7.294" classname="Denied request note audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34458"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT application access pending JIT access auditlog" timestamp="2025-10-15T17:40:10" tests="1" time="6.948" failures="0">
+  
+  <testcase name="JIT application access pending JIT access auditlog Request in pending status audited" time="6.754" classname="Request in pending status audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34779"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT application access denied JIT access auditlog" timestamp="2025-10-15T17:40:17" tests="1" time="9.766" failures="0">
+  
+  <testcase name="JIT application access denied JIT access auditlog Denied request details audited" time="9.680" classname="Denied request details audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34780"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT application access approved JIT access auditlog" timestamp="2025-10-15T17:40:27" tests="1" time="10.733" failures="0">
+  
+  <testcase name="JIT application access approved JIT access auditlog Approved request is audited" time="10.528" classname="Approved request is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34777"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT Application Access Revoke approved request" timestamp="2025-10-15T17:40:38" tests="1" time="13.226" failures="0">
+  
+  <testcase name="JIT Application Access Revoke approved request Revoke the request" time="13.068" classname="Revoke the request">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-42526"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:29:00" tests="0" file="jit-application-access.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="JIT Application Access Enabled" timestamp="2025-10-15T17:29:18" tests="1" time="18.517" failures="0">
+  
+  <testcase name="JIT Application Access Enabled Can send JIT app request after enabling" time="36.398" classname="Can send JIT app request after enabling">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34793"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="JIT App Access Disabled" timestamp="2025-10-15T17:29:36" tests="1" time="6.741" failures="0">
+  
+  <testcase name="JIT App Access Disabled Cannot create JIT app request when JIT access is disabled" time="6.685" classname="Cannot create JIT app request when JIT access is disabled">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34794"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:29:49" tests="0" file="local-ad-grid.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Local AD grid new connector" timestamp="2025-10-15T17:30:08" tests="2" time="14.059" failures="0">
+  
+  <testcase name="Local AD grid new connector Verify connectors displayed in PMC after installing AD connector in endpoint" time="26.539" classname="Verify connectors displayed in PMC after installing AD connector in endpoint">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11226"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Local AD grid new connector Enable a connector" time="5.384" classname="Enable a connector">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11227"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Edit connector details" timestamp="2025-10-15T17:30:22" tests="1" time="6.811" failures="0">
+  
+  <testcase name="Edit connector details Edit a connector" time="6.695" classname="Edit a connector">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11229"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Delete a connector" timestamp="2025-10-15T17:30:28" tests="1" time="6.141" failures="0">
+  
+  <testcase name="Delete a connector Delete a connector" time="6.045" classname="Delete a connector">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11230"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Refresh the connectors" timestamp="2025-10-15T17:30:35" tests="1" time="5.649" failures="0">
+  
+  <testcase name="Refresh the connectors Refresh the connectors" time="5.484" classname="Refresh the connectors">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11404"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Disable connector" timestamp="2025-10-15T17:30:40" tests="1" time="5.933" failures="0">
+  
+  <testcase name="Disable connector Disable a connector" time="5.840" classname="Disable a connector">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11403"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:10:15" tests="0" file="logintest.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Authenticate" timestamp="2025-10-15T17:10:47" tests="1" time="13.965" failures="0">
+  
+  <testcase name="Authenticate Log into PM Cloud" time="45.504" classname="Log into PM Cloud">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12708"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:17:47" tests="0" file="mac-group-updates.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Group Updates for macOS" timestamp="2025-10-15T17:18:05" tests="2" time="16.173" failures="0">
+  
+  <testcase name="Group Updates for macOS Verify macOS manage updates panel is properly formatted" time="27.409" classname="Verify macOS manage updates panel is properly formatted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21117"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Group Updates for macOS Verify macOS client settings panel is properly formatted" time="6.553" classname="Verify macOS client settings panel is properly formatted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21131"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:40:57" tests="0" file="management-rules-delete.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Management Rules Delete Context Menu" timestamp="2025-10-15T17:41:16" tests="3" time="26.619" failures="0">
+  
+  <testcase name="Management Rules Delete Context Menu Should delete a management rule" time="27.133" classname="Should delete a management rule">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-42937"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Management Rules Delete Context Menu Should delete a rule and it doesn&apos;t activate" time="7.427" classname="Should delete a rule and it doesn&apos;t activate">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-42945"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Management Rules Delete Context Menu Should create audit record when management rule is deleted" time="10.220" classname="Should create audit record when management rule is deleted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-42939"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:41:48" tests="0" file="management-rules-enable-disable.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Deactivate Management Rule" timestamp="2025-10-15T17:42:07" tests="1" time="88.487" failures="0">
+  
+  <testcase name="Deactivate Management Rule Computer not moved when rule is deactivated" time="106.319" classname="Computer not moved when rule is deactivated">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-33663"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Re-activate Managent Rule" timestamp="2025-10-15T17:43:35" tests="1" time="22.312" failures="0">
+  
+  <testcase name="Re-activate Managent Rule Computer moved when rule is re-activated" time="22.155" classname="Computer moved when rule is re-activated">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-36387"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:44:01" tests="0" file="management-rules-grid.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Management Rules Grid" timestamp="2025-10-15T17:44:16" tests="1" time="10.208" failures="0">
+  
+  <testcase name="Management Rules Grid Default rules are present" time="25.364" classname="Default rules are present">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-4679"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:44:30" tests="0" file="management-rules-move-computer.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Computer Move Rule creation" timestamp="2025-10-15T17:44:49" tests="1" time="24.422" failures="0">
+  
+  <testcase name="Computer Move Rule creation Can create computer move rule" time="43.056" classname="Can create computer move rule">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-31904"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Computer move rule view details" timestamp="2025-10-15T17:45:13" tests="2" time="34.131" failures="0">
+  
+  <testcase name="Computer move rule view details Rule detail can be viewed" time="12.561" classname="Rule detail can be viewed">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-32011"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer move rule view details Rule can be edited" time="20.731" classname="Rule can be edited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-32012"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Computer Move Rule create validation" timestamp="2025-10-15T17:45:47" tests="3" time="56.649" failures="0">
+  
+  <testcase name="Computer Move Rule create validation Cannot create rule without &apos;group&apos; category" time="17.044" classname="Cannot create rule without &apos;group&apos; category">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34635"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Move Rule create validation Cannot create rule without selecting which groups to move" time="19.936" classname="Cannot create rule without selecting which groups to move">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34637"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Move Rule create validation Cannot create when no &apos;Destination&apos; group selected" time="19.274" classname="Cannot create when no &apos;Destination&apos; group selected">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34638"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Computer Move Rule edit validation" timestamp="2025-10-15T17:46:44" tests="3" time="46.867" failures="0">
+  
+  <testcase name="Computer Move Rule edit validation Cannot save rule edit without &apos;Group&apos; criteria" time="17.563" classname="Cannot save rule edit without &apos;Group&apos; criteria">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34643"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Move Rule edit validation Cannot save rule edit without selecting groups to match" time="14.853" classname="Cannot save rule edit without selecting groups to match">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34644"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Computer Move Rule edit validation Cannot save rule edit when no &apos;Destination&apos; group selected" time="14.130" classname="Cannot save rule edit when no &apos;Destination&apos; group selected">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-34650"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:30:53" tests="0" file="package-manager-installation.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Package Manager" timestamp="2025-10-15T17:31:11" tests="7" time="39.097" failures="0">
+  
+  <testcase name="Package Manager Configuration - Verify Installation page" time="23.416" classname="Configuration - Verify Installation page">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-5082"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Configuration - Verify the Manage Key in Installation screen" time="3.819" classname="Configuration - Verify the Manage Key in Installation screen">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-20928"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Configuration - Can Generate windows Install Command" time="3.725" classname="Configuration - Can Generate windows Install Command">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-20929"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Can generate macOS installation script" time="3.637" classname="Can generate macOS installation script">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21097"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Download the mac script and validate" time="5.423" classname="Download the mac script and validate">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-27221"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Verify 64 bit installer download log in auditlog" time="7.951" classname="Verify 64 bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-27221"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Verify ARM bit installer download log in auditlog" time="8.351" classname="Verify ARM bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14743"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Package Manager page banner validation" timestamp="2025-10-15T17:31:50" tests="1" time="3.257" failures="0">
+  
+  <testcase name="Package Manager page banner validation Verify banner advertising macOS and windows availability" time="3.126" classname="Verify banner advertising macOS and windows availability">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21067"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:31:57" tests="0" file="package-manager-settings.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Package Manager Settings" timestamp="2025-10-15T17:32:15" tests="1" time="7.407" failures="0">
+  
+  <testcase name="Package Manager Settings Configuration - Verify Rate Limiter page format" time="25.203" classname="Configuration - Verify Rate Limiter page format">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38094"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:47:37" tests="0" file="package-manager-statuses-computer-detail.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Package Manager Statuses" timestamp="2025-10-15T17:47:52" tests="7" time="53.472" failures="0">
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify Update status matches expected - Latest macOS" time="26.393" classname="Computer Details - Verify Update status matches expected - Latest macOS">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38567"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify Update status matches expected - Awaiting Updates macOS" time="6.893" classname="Computer Details - Verify Update status matches expected - Awaiting Updates macOS">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38568"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify update status matches expected - update failed macos" time="5.750" classname="Computer Details - Verify update status matches expected - update failed macos">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38570"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify Update status matches expected - Latest Windows" time="7.133" classname="Computer Details - Verify Update status matches expected - Latest Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38571"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify Update status matches expected - Awaiting Updates Windows" time="6.540" classname="Computer Details - Verify Update status matches expected - Awaiting Updates Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38572"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify Update status matches expected - Update Failed Windows" time="5.582" classname="Computer Details - Verify Update status matches expected - Update Failed Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38573"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Computer Details - Verify Update Status matches expected - Manual Updates" time="9.405" classname="Computer Details - Verify Update Status matches expected - Manual Updates">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38574"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:48:52" tests="0" file="package-manager-statuses-group-update-page.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Package Manager Statuses" timestamp="2025-10-15T17:49:11" tests="7" time="51.744" failures="0">
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify Update status matches expected - Latest macOS" time="30.470" classname="Group Update Page - Verify Update status matches expected - Latest macOS">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38575"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify Update status matches expected - Awaiting Updates macOS" time="6.395" classname="Group Update Page - Verify Update status matches expected - Awaiting Updates macOS">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38576"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify update status matches expected - update failed macos" time="6.666" classname="Group Update Page - Verify update status matches expected - update failed macos">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38577"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify Update status matches expected - Latest Windows" time="5.928" classname="Group Update Page - Verify Update status matches expected - Latest Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38578"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify Update status matches expected - Awaiting Updates Windows" time="5.985" classname="Group Update Page - Verify Update status matches expected - Awaiting Updates Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38579"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify Update status matches expected - Update Failed Windows" time="6.377" classname="Group Update Page - Verify Update status matches expected - Update Failed Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38580"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Group Update Page - Verify Update Status matches expected - Manual Updates" time="7.515" classname="Group Update Page - Verify Update Status matches expected - Manual Updates">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38581"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:50:09" tests="0" file="package-manager-statuses-groups-list.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Package Manager Statuses" timestamp="2025-10-15T17:50:27" tests="7" time="41.137" failures="0">
+  
+  <testcase name="Package Manager Statuses Groups List - Verify Update status matches expected - Latest macOS" time="27.195" classname="Groups List - Verify Update status matches expected - Latest macOS">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38095"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Groups List - Verify Update status matches expected - Awaiting Updates macOS" time="4.777" classname="Groups List - Verify Update status matches expected - Awaiting Updates macOS">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38098"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Groups List - Verify update status matches expected - update failed macos" time="4.694" classname="Groups List - Verify update status matches expected - update failed macos">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38102"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Groups List - Verify Update status matches expected - Latest Windows" time="4.927" classname="Groups List - Verify Update status matches expected - Latest Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38097"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Groups List - Verify Update status matches expected - Awaiting Updates Windows" time="4.276" classname="Groups List - Verify Update status matches expected - Awaiting Updates Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38100"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Groups List - Verify Update status matches expected - Update Failed Windows" time="4.738" classname="Groups List - Verify Update status matches expected - Update Failed Windows">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38103"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Package Manager Statuses Groups List - Verify Update Status matches expected - Manual Updates" time="8.159" classname="Groups List - Verify Update Status matches expected - Manual Updates">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38104"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:51:12" tests="0" file="permission-set-create.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Empty role" timestamp="2025-10-15T17:51:31" tests="3" time="24.207" failures="0">
+  
+  <testcase name="Empty role Can create role" time="34.049" classname="Can create role">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25366"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Empty role Can view created role" time="4.289" classname="Can view created role">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25367"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Empty role The standard role is correct" time="4.703" classname="The standard role is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25368"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:51:59" tests="0" file="permission-set-delete.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="deleting a role" timestamp="2025-10-15T17:52:17" tests="2" time="18.661" failures="0">
+  
+  <testcase name="deleting a role can delete role" time="33.541" classname="can delete role">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25371"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="deleting a role cannot find role in role table after role is deleted" time="3.381" classname="cannot find role in role table after role is deleted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25372"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:11:04" tests="0" file="permissions-policy.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Permissions policy compliance" timestamp="2025-10-15T17:11:23" tests="8" time="14.722" failures="0">
+  
+  <testcase name="Permissions policy compliance Geolocation access should be denied" time="21.929" classname="Geolocation access should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24325"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Permissions policy compliance Fullscreen access should be denied" time="1.743" classname="Fullscreen access should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24328"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Permissions policy compliance Payment access should be denied" time="2.253" classname="Payment access should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24330"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Permissions policy compliance Display capture should be denied" time="1.601" classname="Display capture should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24331"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Permissions policy compliance USB access should be denied" time="1.807" classname="USB access should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24333"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Permissions policy compliance User video media access should be denied" time="2.320" classname="User video media access should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24336"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Permissions policy compliance User audio media access should be denied" time="1.705" classname="User audio media access should be denied">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-24337"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:52:42" tests="0" file="policy-assign.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Policy assign to groups" timestamp="2025-10-15T17:53:00" tests="3" time="26.267" failures="0">
+  
+  <testcase name="Policy assign to groups Policy can be assigned to multiple groups" time="34.022" classname="Policy can be assigned to multiple groups">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23584"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policy assign to groups Policy assign panel validation" time="5.006" classname="Policy assign panel validation">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23658"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policy assign to groups Policy assign panel displays correct information" time="4.994" classname="Policy assign panel displays correct information">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23588"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Clear assigned policy" timestamp="2025-10-15T17:53:26" tests="1" time="12.318" failures="0">
+  
+  <testcase name="Clear assigned policy Clear assigned policy from group" time="12.187" classname="Clear assigned policy from group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23590"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:53:43" tests="0" file="policy-creation.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Policy Creation" timestamp="2025-10-15T17:54:00" tests="3" time="20.062" failures="0">
+  
+  <testcase name="Policy Creation Created policy can be viewed" time="26.409" classname="Created policy can be viewed">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-1540"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policy Creation Policy detail is correct" time="5.171" classname="Policy detail is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-675"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policy Creation Policy revision is correct" time="5.715" classname="Policy revision is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-681"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:54:24" tests="0" file="policy-grid.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Policies Grid Colums" timestamp="2025-10-15T17:54:42" tests="4" time="20.514" failures="0">
+  
+  <testcase name="Policies Grid Colums Display all columns in grid" time="24.012" classname="Display all columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28425"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policies Grid Colums Display selected columns in grid" time="4.750" classname="Display selected columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28426"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policies Grid Colums Deselect all columns in grid" time="4.760" classname="Deselect all columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28427"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Policies Grid Colums Hide deselected columns in grid" time="4.492" classname="Hide deselected columns in grid">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28428"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:55:06" tests="0" file="policy-promote-revision.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Promote revision of policy not assigned to any groups" timestamp="2025-10-15T17:55:24" tests="1" time="19.213" failures="0">
+  
+  <testcase name="Promote revision of policy not assigned to any groups Previous revision can be promoted" time="37.083" classname="Previous revision can be promoted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-30906"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Promote revision of policy whose latest revision is assigned to group" timestamp="2025-10-15T17:55:44" tests="1" time="21.198" failures="0">
+  
+  <testcase name="Promote revision of policy whose latest revision is assigned to group Promoted revision can be auto-assigned to group" time="20.943" classname="Promoted revision can be auto-assigned to group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-30907"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Promote policy revision whose earlier revision is assigned to group" timestamp="2025-10-15T17:56:05" tests="1" time="19.746" failures="0">
+  
+  <testcase name="Promote policy revision whose earlier revision is assigned to group Promoted revision not auto-assigned to group" time="19.543" classname="Promoted revision not auto-assigned to group">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-31012"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:32:25" tests="0" file="privilege-management-installation.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Privilege Management Installation Configuration Screen Tests" timestamp="2025-10-15T17:32:43" tests="1" time="4.998" failures="0">
+  
+  <testcase name="Privilege Management Installation Configuration Screen Tests Verify banner advertising Package Manager availability" time="23.026" classname="Verify banner advertising Package Manager availability">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-21095"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Privilege Management Installation Activity Audit" timestamp="2025-10-15T17:32:48" tests="3" time="24.203" failures="0">
+  
+  <testcase name="Privilege Management Installation Activity Audit Verify 32 bit installer download log in auditlog" time="8.465" classname="Verify 32 bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11378"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Privilege Management Installation Activity Audit Verify 64 bit installer download log in auditlog" time="7.557" classname="Verify 64 bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14006"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Privilege Management Installation Activity Audit Verify ARM bit installer download log in auditlog" time="7.571" classname="Verify ARM bit installer download log in auditlog">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-30849"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:56:29" tests="0" file="user-assignrole.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Assign Role" timestamp="2025-10-15T17:56:46" tests="1" time="29.633" failures="0">
+  
+  <testcase name="Assign Role Can assign auditor role for a standard user" time="47.028" classname="Can assign auditor role for a standard user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-36915"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Assign Custom Role" timestamp="2025-10-15T17:57:16" tests="1" time="47.828" failures="0">
+  
+  <testcase name="Assign Custom Role Can assign custom role for a standard user" time="47.676" classname="Can assign custom role for a standard user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-37168"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:58:07" tests="0" file="user-authentication.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Admin" timestamp="2025-10-15T17:58:25" tests="3" time="46.628" failures="0">
+  
+  <testcase name="Admin Admin user successfully logged in" time="28.247" classname="Admin user successfully logged in">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12631"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Admin Admin user successfully logged out" time="17.489" classname="Admin user successfully logged out">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-9892"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Admin Cache is invalid after logout" time="17.711" classname="Cache is invalid after logout">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-39667"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Standard User" timestamp="2025-10-15T17:59:12" tests="3" time="59.333" failures="0">
+  
+  <testcase name="Standard User Standard user successfully logged in" time="24.637" classname="Standard user successfully logged in">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-12904"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Standard User Standard user successfully logged out" time="16.052" classname="Standard user successfully logged out">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-1548"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Standard User Cache is invalid after logout" time="17.886" classname="Cache is invalid after logout">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-39668"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T18:00:15" tests="0" file="user-create.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Existing User" timestamp="2025-10-15T18:00:34" tests="2" time="11.621" failures="0">
+  
+  <testcase name="Existing User Can view existing user" time="25.762" classname="Can view existing user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23321"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Existing User The user detail is correct" time="5.192" classname="The user detail is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-15273"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Administrator user" timestamp="2025-10-15T18:00:46" tests="3" time="23.486" failures="0">
+  
+  <testcase name="Administrator user Can create administrator user" time="11.342" classname="Can create administrator user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-3096"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Administrator user Can view created administrator user" time="4.665" classname="Can view created administrator user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-15148"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Administrator user The administrator user detail is correct" time="7.122" classname="The administrator user detail is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23324"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Standard user" timestamp="2025-10-15T18:01:10" tests="3" time="21.049" failures="0">
+  
+  <testcase name="Standard user Can create standard user" time="10.497" classname="Can create standard user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14365"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Standard user Can view created standard user" time="4.741" classname="Can view created standard user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14376"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Standard user The standard user detail is correct" time="5.377" classname="The standard user detail is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-23333"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="User with role" timestamp="2025-10-15T18:01:31" tests="4" time="31.728" failures="0">
+  
+  <testcase name="User with role Can create user with Administrator role" time="8.410" classname="Can create user with Administrator role">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25298"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="User with role Can create user with custom role" time="10.950" classname="Can create user with custom role">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-25756"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="User with role Can view created user with role" time="5.499" classname="Can view created user with role">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26564"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="User with role The user detail is correct" time="6.341" classname="The user detail is correct">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-26563"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T18:02:06" tests="0" file="user-delete.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Delete User" timestamp="2025-10-15T18:02:25" tests="2" time="29.879" failures="0">
+  
+  <testcase name="Delete User User was deleted" time="33.688" classname="User was deleted">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38082"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Delete User Deleted user is audited" time="15.026" classname="Deleted user is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38278"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T18:02:58" tests="0" file="user-disable.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="disabling a standard user" timestamp="2025-10-15T18:03:17" tests="2" time="20.638" failures="0">
+  
+  <testcase name="disabling a standard user can disable user" time="34.725" classname="can disable user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14377"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="disabling a standard user cannot find user in user table after user is disabled" time="5.029" classname="cannot find user in user table after user is disabled">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-14378"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="disabling an admin user" timestamp="2025-10-15T18:03:38" tests="2" time="19.591" failures="0">
+  
+  <testcase name="disabling an admin user can disable user" time="14.748" classname="can disable user">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11962"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="disabling an admin user cannot find user in user table after user is disabled" time="4.564" classname="cannot find user in user table after user is disabled">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-11916"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T18:04:01" tests="0" file="user-edit.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Edit user role" timestamp="2025-10-15T18:04:19" tests="2" time="29.246" failures="0">
+  
+  <testcase name="Edit user role User role permission was edited" time="35.183" classname="User role permission was edited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38076"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Edit user role User edit is audited" time="11.636" classname="User edit is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-38453"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2025-10-15T17:33:16" tests="0" file="webhook-settings.cy.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Create Webhook" timestamp="2025-10-15T17:33:34" tests="2" time="23.293" failures="0">
+  
+  <testcase name="Create Webhook Can create webhook" time="30.498" classname="Can create webhook">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28268"/>
+      
+    </properties>
+    
+  </testcase>
+  
+  <testcase name="Create Webhook Discard creating webhook" time="10.413" classname="Discard creating webhook">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-27598"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Edit Webhook" timestamp="2025-10-15T17:33:57" tests="1" time="12.529" failures="1">
+  
+  <testcase name="Edit Webhook Modified webhook audited" time="11.217" classname="Modified webhook audited">
+    
+    <failure message="Timed out retrying after 10000ms: Expected to find element: `#test-menu-configuration-icon`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Edit Webhook`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 10000ms: Expected to find element: `#test-menu-configuration-icon`, but never found it.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Edit Webhook`
+    at navigateToConfigPage (webpack://cypress/./cypress/library/config.mjs:25:11)
+    at Context.eval (webpack://cypress/./cypress/e2e/configuration/webhook-settings.cy.js:93:29)]]></failure>
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28172"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Delete Webhook" timestamp="2025-10-15T17:34:10" tests="1" time="6.546" failures="0">
+  
+  <testcase name="Delete Webhook Can delete webhook" time="6.461" classname="Can delete webhook">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-27238"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Audit Deleted Webhook" timestamp="2025-10-15T17:34:16" tests="1" time="6.267" failures="0">
+  
+  <testcase name="Audit Deleted Webhook Deleted webhook is audited" time="6.063" classname="Deleted webhook is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28176"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+<testsuite name="Audit Disabled Webhook" timestamp="2025-10-15T17:34:23" tests="1" time="6.356" failures="0">
+  
+  <testcase name="Audit Disabled Webhook Disabled webhook is audited" time="6.135" classname="Disabled webhook is audited">
+    
+    <properties>
+      
+      <property name="test_key" value="EPM-28182"/>
+      
+    </properties>
+    
+  </testcase>
+  
+</testsuite>
+
+</testsuites>
