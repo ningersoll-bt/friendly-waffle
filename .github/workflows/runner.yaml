@@ -3,19 +3,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  prepare-instance:
-    name: Prepare PMC instance for automation testing
-    runs-on: windows-2022
-    environment: 'automation'
+  publish-results:
+    name: Report Test Results
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+    
+    - name: Test
+      run: |
+        echo "test"
+        cd ${{ github.workspace }}\.github\workflows
+        ls -al
 
-    - name: Publish backend test results summary
+    - name: Publish test results summary
       uses: dorny/test-reporter@e8e27361afb5e7def8b7938009be0726e1bbbf16
-      if: ${{ !cancelled() }}
       with:
-        name: Backend E2E Tests
+        name: Test Results
         path: ${{ github.workspace }}\.github\workflows\results.xml
         reporter: jest-junit
         use-actions-summary: true 
