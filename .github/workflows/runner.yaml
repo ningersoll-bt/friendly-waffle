@@ -20,8 +20,6 @@ jobs:
               if ($testCase.name.EndsWith($testCase.classname)) {
                 $testCase.name = $testCase.name.Substring(0, $testCase.name.Length - $testCase.classname.Length).TrimEnd()
               }
-
-              $testCase.name = $testCase.name + ":"
             }
           }
     
