@@ -14,7 +14,7 @@ jobs:
       shell: pwsh
       run: |
         if (Test-Path "${{ github.workspace }}/.github/workflows/results.xml") {
-          Copy-Item "${{ github.workspace }}/.github/workflows/results.xml" "./results-sumary.xml"
+          Copy-Item "${{ github.workspace }}/.github/workflows/results.xml" "./results-summary.xml"
           [xml]$xmlContent = Get-Content "./results-summary.xml"
           foreach ($testCase in $xmlContent.SelectNodes("//testcase")) {
             if ($testCase.HasAttribute("name") -and $testCase.HasAttribute("classname")) {
