@@ -13,8 +13,9 @@ jobs:
     - name: Format Results XML For Summary
       shell: pwsh
       run: |
-        if (Test-Path "${{ github.workspace }}/.github/workflows/results.xml") {    
-          [xml]$xmlContent = Get-Content "${{ github.workspace }}/.github/workflows/results.xml"
+        if (Test-Path "${{ github.workspace }}/.github/workflows/results.xml") {
+          Copy-Item "${{ github.workspace }}/.github/workflows/results.xml" "./results-sumary.xml"
+          [xml]$xmlContent = Get-Content "${{ github.workspace }}/.github/workflows/results-summary.xml"
           foreach ($testCase in $xmlContent.SelectNodes("//testcase")) {
             if ($testCase.HasAttribute("name") -and $testCase.HasAttribute("classname")) {
               if ($testCase.name.EndsWith($testCase.classname)) {
@@ -23,12 +24,12 @@ jobs:
             }
           }
     
-          $xmlContent.Save("${{ github.workspace }}/.github/workflows/results.xml")
+          $xmlContent.Save("${{ github.workspace }}/.github/workflows/results-summary.xml")
         }
 
     - name: publish Cypress tests results summary
       uses: test-summary/action@31493c76ec9e7aa675f1585d3ed6f1da69269a86 #v2.4
       if: always()
       with:
-        paths: ${{ github.workspace }}/.github/workflows/results.xml
+        paths: ${{ github.workspace }}/.github/workflows/results-summary.xml
         show: "all"
