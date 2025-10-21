@@ -12,9 +12,57 @@ jobs:
     
     - name: Test
       run: |
-        echo "test"
         cd ${{ github.workspace }}/.github/workflows
-        ls -al
+        
+        # Parse through results.xml and remove test suite name duplication from test case names
+        if (Test-Path "results.xml") {
+          Write-Host "Processing results.xml file..."
+          
+          # Read the XML content
+          [xml]$xmlContent = Get-Content "results.xml"
+          
+          # Find all testsuite elements and their testcases to remove duplication
+          $testSuites = $xmlContent.SelectNodes("//testsuite")
+          
+          foreach ($testSuite in $testSuites) {            
+            # Skip Root Suite as it doesn't contain actual test cases
+            if ($testSuite.name -eq "Root Suite") {
+              continue
+            }
+
+            $testSuite.name = $testSuite.name + " - "
+            
+            # Find all testcase elements within this testsuite
+            $testCases = $testSuite.SelectNodes(".//testcase")
+            
+            foreach ($testCase in $testCases) {
+              if ($testCase.HasAttribute("name")) {
+                $originalName = $testCase.name
+                
+                # Remove the test suite name from the beginning of the test case name if it exists
+                if ($originalName.StartsWith($testSuite.name)) {
+                  # Remove the suite name and any trailing space
+                  $cleanedName = $originalName.Substring($testSuite.name.Length).TrimStart()
+                  $testCase.name = $cleanedName + " -"
+                  Write-Host "Cleaned test case name: '$originalName' -> '$($testCase.name)'"
+                } else {
+                  # If no duplication, just add the dash
+                  if (-not $originalName.EndsWith(" -")) {
+                    $testCase.name = $originalName + " -"
+                    Write-Host "Added dash to test case name: '$originalName' -> '$($testCase.name)'"
+                  }
+                }
+              }
+            }
+          }
+          
+          # Save the modified XML back to the file
+          $xmlContent.Save("$PWD/results.xml")
+          Write-Host "Successfully updated results.xml - removed test suite name duplication and added dashes"
+        } else {
+          Write-Host "results.xml file not found in the workflows directory"
+        }
+        
 
     - name: publish Cypress tests results summary
       uses: test-summary/action@31493c76ec9e7aa675f1585d3ed6f1da69269a86 #v2.4
