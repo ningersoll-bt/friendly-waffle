@@ -15,7 +15,7 @@ jobs:
       run: |
         if (Test-Path "${{ github.workspace }}/.github/workflows/results.xml") {
           Copy-Item "${{ github.workspace }}/.github/workflows/results.xml" "./results-sumary.xml"
-          [xml]$xmlContent = Get-Content "${{ github.workspace }}/.github/workflows/results-summary.xml"
+          [xml]$xmlContent = Get-Content "./results-summary.xml"
           foreach ($testCase in $xmlContent.SelectNodes("//testcase")) {
             if ($testCase.HasAttribute("name") -and $testCase.HasAttribute("classname")) {
               if ($testCase.name.EndsWith($testCase.classname)) {
@@ -24,7 +24,7 @@ jobs:
             }
           }
     
-          $xmlContent.Save("${{ github.workspace }}/.github/workflows/results-summary.xml")
+          $xmlContent.Save("./results-summary.xml")
         }
 
     - name: publish Cypress tests results summary
