@@ -16,14 +16,9 @@ jobs:
         cd ${{ github.workspace }}/.github/workflows
         ls -al
 
-    - name: Publish test results summary
-      uses: dorny/test-reporter@e8e27361afb5e7def8b7938009be0726e1bbbf16
+    - name: publish Cypress tests results summary
+      uses: test-summary/action@31493c76ec9e7aa675f1585d3ed6f1da69269a86 #v2.4
+      if: always()
       with:
-        name: Test Results
-        path: ${{ github.workspace }}/.github/workflows/results.xml
-        reporter: jest-junit
-        use-actions-summary: true 
-        only-summary: false
-        fail-on-error: true 
-        list-suites: all
-        list-tests: all
+        paths: ${{ github.workspace }}/.github/workflows/results.xml
+        show: "all"
